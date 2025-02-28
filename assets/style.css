@@ -16,10 +16,7 @@
     --date-card: grey;
 }
 
-body {
 
-    min-width: 480px;
-}
 
 header {
 
@@ -47,10 +44,10 @@ main {
 }
 
 .container {
+    
+    width: 1200px;
+    margin: 0 auto;
 
-    display: flex;
-    justify-content: center;
-    width: 70%;
 }
 
 .row {
@@ -59,11 +56,13 @@ main {
     justify-content: center;
     display: flex;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .col {
 
     margin: 1rem;
+    
 }
 
 .card {
@@ -108,5 +107,25 @@ main {
         text-transform: uppercase;
 
     }
+}
+
+/* mediaquery */
+@media screen and (max-width:664px) {
+
+    body {
+
+        min-width: 480px;
+    }
+
+    .title-card{
+        span{
+            display: none;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
 }
 

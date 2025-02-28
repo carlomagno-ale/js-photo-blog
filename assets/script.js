@@ -2,7 +2,7 @@ const photoList = document.getElementById("photo-list")
 const urlEndpoint = "https://lanciweb.github.io/demo/api/pictures"
 
 
-//chiamata ajax
+//ajax call to generate the cards with various data 
 axios.get(urlEndpoint)
    .then(response => {
 
