@@ -1,18 +1,23 @@
 const photoList = document.getElementById("photo-list")
+const urlEndpoint = "https://lanciweb.github.io/demo/api/pictures"
+
 
 //chiamata ajax
-
-axios.get("https://lanciweb.github.io/demo/api/pictures")
+axios.get(urlEndpoint)
    .then(response => {
 
-      const img = response.data[0].url
-      console.log(img)
-      const date = response.data[0].date
-      console.log(date)
-      const title = response.data[0].title
+      for (let i = 0; i < response.data.length; i++) {
+         const photoData = response.data[i];
 
-      photoList.innerHTML = ` 
-     <div class="col">
+         const img = photoData.url
+         console.log(img)
+         const date = photoData.date
+         console.log(date)
+         const title = photoData.title
+         console.log(title)
+
+         photoList.innerHTML += ` 
+         <div class="col">
           <div class="card">
             <div class="pin"></div>
             <img src="${img}" alt="spiaggia">
@@ -22,7 +27,8 @@ axios.get("https://lanciweb.github.io/demo/api/pictures")
             </div>
           </div>
         </div>  `
-
+      }
 
    })
    .catch(error => console.error(error));
+
