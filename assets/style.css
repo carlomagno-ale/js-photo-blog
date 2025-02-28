@@ -7,7 +7,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px dashed grey;
+    /*border: 1px dashed grey;*/
+}
+
+:root {
+
+    --background-cards: white;
+    --date-card: grey;
 }
 
 header {
@@ -18,10 +24,71 @@ header {
     justify-content: center;
     background-image: url(./img/wall.png);
 
-    h1{
+    h1 {
         font-family: "Edu TAS Beginner";
         font-weight: bold;
         font-size: 4.5rem;
+        text-transform: uppercase;
     }
-   
+
+}
+
+main {
+
+    background-image: url(./img/cork.png);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+.col {
+
+    margin-inline: 1rem;
+    margin-top: 3rem;
+
+}
+
+.card {
+
+    width: 300px;
+    height: 365px;
+    background-color: var(--background-cards);
+
+    img{
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+.title-card{
+
+    padding-left: 1rem;
+
+    span{
+        font-family: "Sometype Mono", monospace;
+        font-size: 0.8rem;
+        color: var(--date-card)
+    }
+
+    h2{
+
+        font-family: "Edu TAS Beginner";
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
 }
