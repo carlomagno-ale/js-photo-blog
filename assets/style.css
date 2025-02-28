@@ -1,6 +1,27 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* common */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px dashed grey;
 }
 
+header {
+
+    min-height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/wall.png);
+
+    h1{
+        font-family: "Edu TAS Beginner";
+        font-weight: bold;
+        font-size: 4.5rem;
+    }
+   
+}
