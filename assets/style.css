@@ -14,7 +14,7 @@
 
     --background-cards: white;
     --date-card: grey;
-    --shadow-card: rgba(30, 30, 30, 0.336); 
+    --shadow-card: rgba(30, 30, 30, 0.336);
 }
 
 header {
@@ -42,6 +42,7 @@ header {
 body {
 
     background-image: url(./img/cork.png);
+    position: relative;
 }
 
 .card {
@@ -56,20 +57,19 @@ body {
         padding: 1rem;
     }
 
-    :hover{
+    :hover {
         cursor: pointer;
     }
 }
 
 .pin {
     position: absolute;
-    top: -3%;
-    left: 42%;
-    right: 0;
-    bottom: 0;
     background-image: url(./img/pin.svg);
     height: 2.1rem;
     width: 2.1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -89,6 +89,20 @@ body {
         text-transform: uppercase;
 
     }
+}
+
+.gallery {
+
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background-color: rgba(0, 0, 0, 0.586);
+    display: none;
+
+
 }
 
 @media screen and (max-width:576px) {

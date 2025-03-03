@@ -30,13 +30,14 @@ axios.get(urlEndpoint)
 
     const allCard = document.querySelectorAll(".card")
     console.log(allCard)
+    const gallery = document.querySelector(".gallery")
 
     for (let i = 0; i < allCard.length; i++) {
 
-      allCard[i].addEventListener('click', funzione1)
+      allCard[i].addEventListener('click', galleryPhoto)
 
-      function funzione1() {
-        allCard[i].style.backgroundColor = "red";
+      function galleryPhoto() {
+        gallery.style.display = "block";
       }
     }
   })
