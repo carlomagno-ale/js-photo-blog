@@ -98,16 +98,25 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;    
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.586);
     display: none;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     z-index: 1;
-    
+
+    .btn {
+        position: sticky;
+        top: 3%;
+    }
+
+
     img {
-        width: 600px;   
+
+        width: 40%;
+        position: sticky;
+        top: 10%;
     }
 }
 
@@ -117,6 +126,13 @@ body {
 
         h1 {
             font-size: 2rem;
+        }
+    }
+
+    .gallery {
+
+        img {
+            width: 80%;
         }
     }
 }
