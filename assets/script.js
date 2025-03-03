@@ -25,6 +25,10 @@ axios.get(urlEndpoint)
               <h2 class="fs-4">${title}</h2>
             </div>
           </div>
+        </div>
+        <div class="gallery">
+        <button class="btn btn-light mt-3 mb-2">Chiudi</button>
+        <img class="img-photo" src="${img}" alt="spiaggia">
         </div>  `
     }
 
@@ -37,7 +41,7 @@ axios.get(urlEndpoint)
       allCard[i].addEventListener('click', galleryPhoto)
 
       function galleryPhoto() {
-        gallery.style.display = "block";
+        gallery.style.display = "flex";
       }
     }
   })
