@@ -17,13 +17,13 @@ axios.get(urlEndpoint)
          console.log(title)
 
          photoList.innerHTML += ` 
-         <div class="col">
-          <div class="card">
+         <div class="col-md-6 col-lg-4 col-sm-6 col-12 mt-4">
+          <div class="card rounded-0 border-0">
             <div class="pin"></div>
             <img src="${img}" alt="spiaggia">
-            <div class="title-card">
+            <div class="title-card px-3 pb-2">
               <span>${date}</span>
-              <h2>${title}</h2>
+              <h2 class="fs-4">${title}</h2>
             </div>
           </div>
         </div>  `
