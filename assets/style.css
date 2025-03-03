@@ -11,7 +11,6 @@
 }
 
 :root {
-
     --background-cards: white;
     --date-card: grey;
     --shadow-card: rgba(30, 30, 30, 0.336);
@@ -22,6 +21,7 @@ header {
     align-items: center;
     justify-content: center;
     background-image: url(./img/wall.png);
+    min-width: 200px;
 
     h1 {
         font-family: "Edu TAS Beginner";
@@ -29,25 +29,20 @@ header {
         font-size: 4rem;
         text-transform: uppercase;
         padding: 1rem;
-
+        white-space: nowrap;
     }
-
 }
 
 .container {
-
     width: 70% !important;
 }
 
 body {
-
     background-image: url(./img/cork.png);
     position: relative;
 }
 
 .card {
-
-    position: relative;
     background-color: var(--background-cards);
     border: none;
     box-shadow: 3px 4px 3px 0px var(--shadow-card);
@@ -74,7 +69,6 @@ body {
 
 
 .title-card {
-
     span {
         font-family: "Sometype Mono", monospace;
         font-size: 0.8rem;
@@ -87,12 +81,10 @@ body {
         font-family: "Edu TAS Beginner";
         font-weight: bold;
         text-transform: uppercase;
-
     }
 }
 
 .gallery {
-
     position: absolute;
     background-color: black;
     top: 0;
@@ -100,6 +92,8 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.586);
+    min-height: 100vh;
+    min-width: 200px;
     display: none;
     justify-content: flex-start;
     align-items: center;
@@ -111,9 +105,7 @@ body {
         top: 3%;
     }
 
-
     img {
-
         width: 40%;
         position: sticky;
         top: 10%;
@@ -123,16 +115,26 @@ body {
 @media screen and (max-width:576px) {
 
     header {
-
         h1 {
             font-size: 2rem;
         }
     }
 
-    .gallery {
+    .title-card{
+        span{
+            display: none;
+        }
+    }
 
+  
+}
+
+@media screen and (max-width:992px){
+
+    .gallery {
         img {
             width: 80%;
         }
     }
+
 }

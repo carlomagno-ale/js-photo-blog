@@ -22,7 +22,7 @@ axios.get(urlEndpoint)
             <img src="${img}" alt="">
             <div class="title-card px-3 pb-2">
               <span>${date}</span>
-              <h2 class="fs-4">${title}</h2>
+              <h2 class="fs-3">${title}</h2>
             </div>
           </div>
         </div>  `
